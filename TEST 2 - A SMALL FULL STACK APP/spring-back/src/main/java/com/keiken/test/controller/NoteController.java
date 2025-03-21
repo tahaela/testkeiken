@@ -9,6 +9,7 @@ import com.keiken.test.service.NoteService;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*") // React app URL
 @RequestMapping("/api/notes")
 public class NoteController {
 

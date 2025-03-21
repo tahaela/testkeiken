@@ -27,7 +27,8 @@ Move into the **spring-back** directory and run the following command:
 ## Running the frontend
 Move into the **react-front** directory and run the following commands:
 
-    npm install
+    npm install 
+
     npm run dev -- --host
     go to `https://<your-id>.sandsculptor.keiken-digital.io:5173
     

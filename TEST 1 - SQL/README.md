@@ -34,6 +34,7 @@ This test is designed to evaluate your ability to:
   - Table name
   - Column names and data types
   - Primary keys and foreign keys (if any)
+   foreign  ,  primary key 
 
 ### **2. Relationships Between Tables**
 - Identify the relationships between tables, including:

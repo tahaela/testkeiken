@@ -11,6 +11,7 @@ import com.keiken.test.service.NoteService;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*") // React app URL
 @RequestMapping("/api/notebooks")
 public class NotebookController {
 
