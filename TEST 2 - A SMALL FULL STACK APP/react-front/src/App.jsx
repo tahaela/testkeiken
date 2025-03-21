@@ -43,7 +43,7 @@ function App() {
   };
 
   const handleDeleteNotebook = async (id) => {
-    api.deleteNotebook(id);
+    await api.deleteNotebook(id);
     loadNotebooks();
     if (selectedNotebook?.id === id) {
       setSelectedNotebook(null);
@@ -61,6 +61,22 @@ function App() {
     setNoteTitle('');
     setNoteContent('');
   };
+
+  const handleSortNotebooks() => {
+      return notebooks.sort((a, b) => {
+        const titleA = a.title.toLowerCase();
+        const titleB = b.title.toLowerCase();
+        
+        if (titleA < titleB) {
+          return -1;
+        }
+        if (titleA > titleB) {
+          return 1;
+        }
+        return 0;
+      });
+    }
+  }
 
   const handleSaveNote = async () => {
     if (!selectedNotebook || !noteTitle.trim()) return;
